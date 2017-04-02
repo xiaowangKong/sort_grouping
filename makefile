@@ -1,0 +1,7 @@
+sort_grouping : main.o 
+	g++ -o sort_grouping main.o
+
+main.o : main.cpp quicksort.h timer.h mergesort.h
+	g++ -c main.cpp
+clean :
+	rm sort_grouping main.o
